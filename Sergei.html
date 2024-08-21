@@ -7,95 +7,109 @@
     <meta name="keywords" content="html, course, css, tags">
     <meta name="description" content="Это базовый курс по html">
     <title>Sergei</title>
+    <link rel="stylesheet" href="01_selectorsss.css">
+    <link rel="stylesheet" href="02_sergey.css">
 </head>
 
 <body>
-    <img src="imgs/cs84gw7Mpls.jpg" alt="Сергей Пономарев" width="150">
+    <div class="container">
+        <div class="info">
+            <img src="imgs/cs84gw7Mpls.jpg" alt="Сергей Пономарев" class="avatar">
 
-    <h1>Sergei Ponomarev</h1>
+            <div class="info-text">
+                <h1>Сергей Пономарев</h1>
 
-    <p><strong><em>Я самый лучший человек в мире, самый добрый</em></strong></p>
+                <p><strong><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum adipisci quibusdam dolor
+                            nemo saepe. Odit maiores porro inventore sapiente ipsam?</em></strong></p>
 
-    <h3>Список социальных сетей:</h3>
+                <h3>Список социальных сетей:</h3>
 
-    <a href="https://vk.com/feed" target="_blank">VK</a>
-    |
-    <a href="https://www.youtube.com/channel/UCnBcoihvkQ6GMIYYmMGA9fg" target="_blank">youtube</a>
-
-    <h2>Мои хобби</h2>
-
-    <ul>
-        <li>Путешествия</li>
-        <li>Боулинг</li>
-        <li>Горные лыжи</li>
-        <li>ММА</li>
-    </ul>
-
-    <h2>Мои хобби</h2>
-
-    <ol>
-        <li>Путешествия</li>
-        <li>Боулинг</li>
-        <li>Горные лыжи</li>
-        <li>MMA</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td>Скорая помощь</td>
-                <td>Фельдшер</td>
-                <td>2007-2009</td>
-            </tr>
-
-            <tr>
-                <td>ФКУ ИК-3</td>
-                <td>Комендант</td>
-                <td>2009-2011</td>
-            </tr>
-
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной:</h2>
-
-    <form>
-
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <a href="https://vk.com/feed" target="_blank">VK</a>
+                |
+                <a href="https://www.youtube.com/channel/UCnBcoihvkQ6GMIYYmMGA9fg" target="_blank">youtube</a>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card hobby">
+            <h2>Мои хобби</h2>
+
+            <ul class="list">
+                <li>Путешествия</li>
+                <li>Боулинг</li>
+                <li>Горные лыжи</li>
+                <li>ММА</li>
+            </ul>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" rows="10" cols="10" ></textarea>
+        <div class="card work">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                </thead> -->
+                <tbody>
+
+                    <tr>
+                        <td>Скорая помощь</td>
+                        <td>Фельдшер</td>
+                        <td>2007-2009</td>
+                    </tr>
+
+                    <tr>
+                        <td>ФКУ ИК-3</td>
+                        <td>Комендант</td>
+                        <td>2009-2011</td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
 
-        <button type="submit">Отправить форму</button>
+
+        <div class="card connection">
+
+            <form class="form">
+                <h2>Связаться со мной:</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" rows="10" cols="10"></textarea>
+                </div>
+
+                <p>
+                    <button class="btn" type="submit">Отправить форму</button>
+                </p>
 
 
 
-    </form>
+            </form>
+        </div>
 
-    <hr>
+        <hr>
 
 
-    <p><em>ipsum dolor sit amet consectetur adipisicing elit.</em> <br>Animi cumque odio est ipsa fugit obcaecati
-        provident nesciunt excepturi? Unde, expedita.</p>
+        <p><em>ipsum dolor sit amet consectetur adipisicing elit.</em> <br>Animi cumque odio est ipsa fugit obcaecati
+            provident nesciunt excepturi? Unde, expedita.</p>
+
+    </div>
+
 </body>
 
 </html>
